@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/mobile_asset/!svn/ver/792/trunk/2.0/ios/zichan/zichan/BaseClasses/Controller
+END
+BaseViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile_asset/!svn/ver/240/trunk/2.0/ios/zichan/zichan/BaseClasses/Controller/BaseViewController.h
+END
+BaseNavigationController.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile_asset/!svn/ver/240/trunk/2.0/ios/zichan/zichan/BaseClasses/Controller/BaseNavigationController.h
+END
+BaseViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobile_asset/!svn/ver/294/trunk/2.0/ios/zichan/zichan/BaseClasses/Controller/BaseViewController.m
+END
+BaseNavigationController.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobile_asset/!svn/ver/792/trunk/2.0/ios/zichan/zichan/BaseClasses/Controller/BaseNavigationController.m
+END
