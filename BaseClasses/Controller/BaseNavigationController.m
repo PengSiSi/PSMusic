@@ -21,11 +21,12 @@
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     UINavigationBar *navBarAppearance = [UINavigationBar appearanceWhenContainedIn:self, nil];
 #pragma clang diagnostic pop
-    [navBarAppearance setShadowImage:[[UIImage alloc] init]];
-    [navBarAppearance setBackgroundImage:[UIImage imageNamed:@"above_background_image"] forBarMetrics:UIBarMetricsDefault];
+//    [navBarAppearance setShadowImage:[[UIImage alloc] init]];
+//    [navBarAppearance setBackgroundImage:[UIImage imageNamed:@"above_background_image"] forBarMetrics:UIBarMetricsDefault];
     NSDictionary *attrs = @{NSFontAttributeName : [UIFont systemFontOfSize:18], NSForegroundColorAttributeName : [UIColor whiteColor]};
     navBarAppearance.titleTextAttributes = attrs;
-    navBarAppearance.tintColor = [UIColor whiteColor];
+//    navBarAppearance.tintColor = [UIColor redColor];
+    navBarAppearance.barTintColor = NAV_RED_COLOR;
     if (IOS8_OR_LATER) {
         navBarAppearance.translucent = NO;
     }
@@ -51,7 +52,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    // 设置状态栏的样式为白色
+    self.navigationBar.barStyle = UIBarStyleBlack;
+    // 导航控制器视图的颜色
+    self.view.backgroundColor = [UIColor lightGrayColor];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

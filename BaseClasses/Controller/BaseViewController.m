@@ -21,4 +21,19 @@
 }
 
 
+/**
+ 尝试设置无效,设置了navigationBar的barStyle即可
+ */
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;  //默认的值是黑色的
+}
+
+- (BOOL)prefersStatusBarHidden
+
+{
+    return NO; // 是否隐藏状态栏
+}
+
 @end
