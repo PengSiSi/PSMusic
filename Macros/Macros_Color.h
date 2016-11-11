@@ -26,4 +26,8 @@
 // 深灰色<标签栏>
 #define TABBAR_GRAY_COLOR RGBA(105, 105, 105, 1)
 
+// 浅灰色<视图背景>
+#define BGVIEW_COLOR RGBA(245, 245, 245, 1)
+
+
 #endif /* Macros_Color_h */

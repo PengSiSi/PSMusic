@@ -8,7 +8,9 @@
 
 #import "MyMusicViewController.h"
 
-@interface MyMusicViewController ()
+@interface MyMusicViewController ()<UITableViewDelegate, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *myMusicTableView;
 
 @end
 
@@ -16,22 +18,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark - Life Cycle
 
-/*
-#pragma mark - Navigation
+#pragma mark - 导航栏按钮
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 设置界面
+
+#pragma mark - 网络请求
+
+#pragma mark - UITableViewDataSource
+
+#pragma mark - UITableViewDelegate
+
+#pragma mark - 懒加载
+
+- (UITableView *)myMusicTableView {
+    
+    if (!_myMusicTableView) {
+        _myMusicTableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _myMusicTableView.delegate = self;
+        _myMusicTableView.dataSource = self;
+    }
+    return _myMusicTableView;
 }
-*/
 
 @end
